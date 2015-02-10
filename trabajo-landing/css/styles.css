@@ -1,43 +1,351 @@
+@font-face {
+	font-family: "Crimson";
+	src: url('../fonts/crimsontext-bold-webfont.eot');
+	src: url('../fonts/crimsontext-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/crimsontext-bold-webfont.woff2') format('woff2'),
+		url('../fonts/crimsontext-bold-webfont.woff') format('woff'),
+		url('../fonts/crimsontext-bold-webfont.ttf') format('truetype'),
+		url('../fonts/crimsontext-bold-webfont.svg#crimson_textbold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Crimson";
+	src: url('../fonts/crimsontext-regular-webfont.eot');
+	src: url('../fonts/crimsontext-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/crimsontext-regular-webfont.woff2') format('woff2'),
+		url('../fonts/crimsontext-regular-webfont.woff') format('woff'),
+		url('../fonts/crimsontext-regular-webfont.ttf') format('truetype'),
+		url('../fonts/crimsontext-regular-webfont.svg#crimson_textroman') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+}@font-face {
+	font-family: "Crimson";
+	src: url('../fonts/crimsontext-italic-webfont.eot');
+	src: url('../fonts/crimsontext-italic-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/crimsontext-italic-webfont.woff2') format('woff2'),
+		url('../fonts/crimsontext-italic-webfont.woff') format('woff'),
+		url('../fonts/crimsontext-italic-webfont.ttf') format('truetype'),
+		url('../fonts/crimsontext-italic-webfont.svg#crimson_textitalic') format('svg');
+	font-weight: 400;
+	font-style: italic;
+}
+
 *{
 	margin: 0;
 	padding: 0;
 }
-header{
-	width: 100%;
-	height: 450px;
-	overflow: hidden;
-	background: url(../img/banner-head.jpg);
+
+html{
+	font-size: 62.5%;
+	font-family: "Open Sans", Arial, sans-serif;
 }
-content{
-	overflow: hidden;
-}
+
 h1{
-	text-indent: 5000px;
-	background: url(../img/logo.png) top center #1b8abe no-repeat;
-	width: 150px;
-	height: 100px;
-	float: left;
+	font-size: 3rem;
 }
-nav{
-	position: fixed;
-	width: 100%;
+
+h2{
+	font-size: 2.4rem;
 }
-nav li{
-	display: inline-block;
-	padding: 31px 80px;
-	
-}
-nav li a{
-	color: white;
+
+h3{
 	font-size: 2rem;
+}
+
+h4{
+	font-size: 1.6rem;
+}
+
+h5{
+	font-size: 1.2rem;
+}
+
+a, p, blockquote{
 	text-decoration: none;
+	font-size: 1.6rem;
 }
-nav ul{
-	background-color: #000;
+
+main, section{
+	overflow: hidden;
 }
-.hero-image{
+
+.content {
+	max-width: 100rem;
+	margin: 0 auto;
+	position: relative;
+}
+
+.content p, .content blockquote, .register em{
+	font-family: "Crimson", "Times New Roman", "Times", "Open Sans", Arial, sans-serif;
+}
+
+.funny-event p, .quotes p, .register p, a{
+	font-family: "Open Sans", Arial, sans-serif;
+}
+
+.fixed-header{
+	position: fixed;
+	z-index: 100;
 	width: 100%;
 }
-footer{
-	width: 100%;
+
+.logo{
+	background: url("../img/logo.png") no-repeat center center;
+	background-color: #1B8ABE;
+	display: inline-block;
+	width: 14.4rem;
+	height: 10.3rem;
+	float: left;
+	text-indent: -9999px;
+}
+
+.main-nav{
+	background: #2B2B2B;
+}
+
+.nav-link {
+	display: inline-block;
+	margin: 4rem 7rem;
+}
+
+.leaves-separator {
+	margin: 0 auto 3rem;
+	display: block;
+}
+
+.banner{
+	background: url("../img/banner-head.jpg") no-repeat center center;
+	background-size: 100% 100%;
+	text-align: center;
+	height: 53rem;
+	margin: 10.2rem 0 0;
+}
+
+.banner p, .banner h3{
+	margin: 1rem 0;
+}
+
+.content h2{
+	margin: 7.2rem 0 3rem;
+}
+
+.content h4{
+	margin: 2rem 0 2.4rem;
+}
+
+.previous-events p{
+	margin: 0 0 3.6rem;
+}
+
+.separator-bar{
+	margin: 14rem 0 2rem;
+	border-bottom: 1px solid #282828;
+}
+
+.two-column{
+	display: table-cell;
+	width: 50%;
+	padding-right: 3rem;
+	margin: 0 0 10rem;
+	vertical-align: text-top;
+}
+
+.previous-events {
+	background: #F0F0F0;
+	padding: 2rem;
+	margin: 0 0 3rem;
+	overflow: hidden;
+}
+
+.quotes {
+	background: #F3810E;
+}
+
+.quote-content {
+	padding: 2rem 3rem 3.5rem;
+	text-align: left;
+	font-style: italic;
+}
+
+.quotes p {
+	padding: 0 3rem 3.5rem;
+	text-align: right;
+}
+
+.triangle-quote {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	border: 2rem solid transparent;
+	border-left: 2rem solid #f3810e;
+	border-top: 2rem solid #f3810e;
+	left: 0;
+	top: 0;
+	margin-left: 4rem;
+}
+
+.three-columns {
+	display: table-cell;
+	vertical-align: text-top;
+	width: 30%;
+	padding: 0 1rem;
+}
+
+.funny-event {
+	background: url(../img/dccr-fun.png) no-repeat center center;
+	background-color: #1D1F27;
+}
+
+.testimonials {
+	margin: 5rem 0 10rem;
+}
+
+.partners {
+	background: #F0F0F0;
+	padding: 0 0 17rem;
+}
+
+.overlay {
+	background: rgba(28,31,39,0.85);
+	padding: 8rem 0;
+	height: 65rem;
+}
+
+.overlay-align {
+	margin: 27rem 0;
+}
+
+.overlay-align h2 {
+	margin: 0 0 3rem;
+}
+
+.overlay-align h4 {
+	margin: 0;
+}
+
+.register {
+	margin: 0 0 19rem;
+}
+
+.register p{
+	margin: 2.5rem 0;
+}
+
+.register em{
+	font-weight: 400;
+}
+
+.img-center {
+	display: block;
+	margin: 0 auto 4rem;
+}
+
+.main-footer {
+	background: #2B2B2B;
+	padding: 10rem 0 14.5rem;
+}
+
+.footer-links {
+	padding: 1.6rem 1rem 1rem;
+	margin: 0 1rem;
+	border-bottom: 1px solid #FFFFFF;
+	font-weight: 700;
+}
+
+/*
+Generic rules
+*/
+
+.gray-text{
+	color: #6E7C89;
+}
+
+.black-text{
+	color: #000000;
+}
+
+.blue-text{
+	color: #00BCF2;
+}
+
+.white-text {
+	color: #FFFFFF;
+}
+
+.red-text {
+	color: #FF0000;
+}
+
+.to-uppercase{
+	text-transform: uppercase;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.left-text {
+	text-align: left;
+}
+
+.bold-text {
+	font-weight: 700;
+}
+
+.to-left{
+	float: left;
+	margin: 2rem;
+}
+
+.white-border{
+	background: rgba(0,0,0,0);
+	border: 2px solid #FFFFFF;
+	border-radius: 5px;
+}
+
+.blue-border {
+	background: #FFFFFF;
+	border: 2px solid #00BCF2;
+	border-radius: 5px;
+}
+
+.btn-center{
+	display: inline-block;
+	text-align: center;
+	margin: 0 auto;
+	padding: 1.6rem 6rem;
+}
+
+.dotted:before{
+	content: "•";
+	margin-right: 0.8rem;
+}
+
+.dotted:after{
+	content: "•";
+	margin-left: 0.8rem;
+}
+
+.quote-content:before {
+	content: open-quote;
+	margin-right: 0.5rem;
+}
+
+.quote-content:after {
+	content: close-quote;
+	margin-left: 0.5rem;
+}
+
+.middle-bar:before {
+	content: "------";
+}
+
+.middle-bar:after {
+	content: "------";
 }
